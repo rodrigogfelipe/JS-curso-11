@@ -9,10 +9,31 @@
 <body>
       <!--HTML-->
       <h1>Paises</h1>
-      Qual é o pais <input type="texto" name="txtvel" id="txtvel"> Km/h
+      Qual é o pais <input type="text" name= "texto"id="texto">
       <input type="button" value="verificar" onclick="verificar()">
-      <div id="res"> 
+      <div id="res">
 
+      </div>
+      <!--JS-->
+      <script>
+          function verificar() {
+              /*var txtv recebedo o ID do campo input*/
+              var txtv= window.document.querySelector('input#texto')
+              var res= window.document.querySelector('div#res')
+              var pais= (txtv.value)
+            console.log(`Vivendo no ${pais}`)
+            if(pais == 'Brasil') {
+                console.log('Brasileiro')
+            } else {
+                console.log('Estrangeiro')
+}
+
+
+          }
+
+          
+      
+      </script>
     
 </body>
 </html>
@@ -20,13 +41,4 @@
 
 
 
-
-
-/*var pais= 'EUA'
-console.log(`Vivendo no ${pais}`)
-if(pais == 'Brasil') {
-    console.log('Brasileiro')
-}else {
-    console.log('Estrangeiro')
-}*/
    
